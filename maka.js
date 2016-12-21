@@ -6,6 +6,8 @@
 
 // Note - update 1.0.1 moves these to Amazon S3, as my old server wasn't designed to take the amount of traffic that MAKA was generating. If you use this code, please host your own copy of the images - thanks!
 
+// Image source is changed.
+
 var theKittens = {"kitten": [
     {"file": "1.jpg", "Credit": "Crsan", "URL": "http://www.flickr.com/photos/crsan/2571204498/", "type":"0"},
 	{"file": "2.jpg", "Credit": "Abcrumley", "URL": "http://www.flickr.com/photos/crumley/160490011/", "type":"0"},
@@ -56,8 +58,8 @@ function makanow(theKittens){
 			var imgsrc = String(img.src);
 			imgsrc = imgsrc.toLowerCase();
 			if ((alttext.indexOf(blist) != -1) || (imgsrc.indexOf(blist) != -1)){
-				var randk = Math.floor(Math.random() * 32) + 1
-				img.src = 'http://s3.amazonaws.com/makapics/'+theKittens.kitten[randk].file+'';
+				var randk = Math.floor(Math.random() * 39) + 1
+				img.src = 'http://s3.eu-central-1.amazonaws.com/molocatebucket/random-photos/'+theKittens.kitten[randk].file+'';
 				if (theKittens.kitten[randk].type == 0){
 					img.alt = 'Photo by '+theKittens.kitten[randk].Credit+' source '+theKittens.kitten[randk].URL+'';
 				}
