@@ -1,3 +1,4 @@
+// Originally
 // maka.js - part of make america kittens again
 // by Tom Royal 
 // tomroyal.com
@@ -5,7 +6,7 @@
 
 // Image source is changed.
 
-function makanow(){
+function mitanow(){
 
 	// called on page load. Searches all img alt text and srcs for the strings in blacklist, replaces with random photos
 	var pagepics=document.getElementsByTagName("img"), i=0, img;	
@@ -27,4 +28,4 @@ function makanow(){
 };
 
 // add listener
-document.addEventListener('DOMContentLoaded', makanow(), false);
+document.addEventListener('DOMContentLoaded', mitanow(), false);
