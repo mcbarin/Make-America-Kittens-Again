@@ -47,7 +47,7 @@ function makanow(theKittens){
 
 	// called on page load. Searches all img alt text and srcs for the strings in blacklist, replaces with kittens
 	var pagepics=document.getElementsByTagName("img"), i=0, img;	
-	var blacklist = ["trump"];
+	var blacklist = ["trump","recep", "tayyip", "erdogan", "erdoğan", "rte","binali", "gökçek", "gokcek"];
 	while (img = pagepics[i++])
 	{	
 		blacklist.forEach(function(blist) {	
