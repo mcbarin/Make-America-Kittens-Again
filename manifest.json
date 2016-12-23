@@ -12,8 +12,9 @@
           "128": "maka128.png" },
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
-      "js": ["mita.js"]
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["mita.js"],
+      "run_at": "document_end"
     }
   ]
 }
