@@ -24,7 +24,9 @@ function mitanow(){
 				img.alt = 'Photo by Tayyipless';
 			};
 		});		
-	}	    
+	}
+
+        document.body.innerHTML = document.body.innerHTML.replace(/Tayyip/g, "Başçalan").replace(/Gökçek/g, "Fışkiye");	    
 };
 
 // add listener
